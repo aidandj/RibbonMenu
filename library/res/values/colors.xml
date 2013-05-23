@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="rbm_menu_background">#000000</color>
+    <color name="rbm_item_text_color">#ffffff</color>
+    <color name="rbm_item_channel_1_color">#ff0000</color>
+    
+</resources>
