@@ -1,3 +1,8 @@
+These are my edits to David Scott's original Ribbon Menu. It adds options to make left and right side menus, and an interface to toggle the menu from a non activity class.
+
+-ADJ
+
+
 RibbonMenu
 ==========
 
