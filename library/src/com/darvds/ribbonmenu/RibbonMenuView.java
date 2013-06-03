@@ -13,6 +13,7 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
@@ -90,14 +91,21 @@ public class RibbonMenuView extends LinearLayout {
 		rbmListViewRight = (ListView) findViewById(R.id.rbm_list_view_right_2);
 		rbmOutsideView = (View) findViewById(R.id.rbm_outside_view);
 				
-		rbmOutsideView.setOnClickListener(new OnClickListener() {
-			
+		rbmOutsideView.setOnTouchListener(new OnTouchListener() {
+
 			@Override
-			public void onClick(View v) {
+			public boolean onTouch(View v, MotionEvent event) {
+				// TODO Auto-generated method stub
 				hideMenu(0);
-				
+				if((event.getY() < 450) && (event.getY() > 280)){
+					if((event.getX() < 70)){
+						toggleMenu(LEFT_ANIM);
+					}
+				}
+				return false;
 			}
 		});
+		
 		
 		
 		rbmListView.setOnItemClickListener(new OnItemClickListener() {
