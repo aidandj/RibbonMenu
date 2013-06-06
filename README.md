@@ -1,5 +1,7 @@
 These are my edits to David Scott's original Ribbon Menu. It adds options to make left and right side menus, and an interface to toggle the menu from a non activity class.
 
+Take a look at the tekschola application for examples on how to use the callbacks. Both menu and ui threading stuff.
+
 -ADJ
 
 
